@@ -32,7 +32,7 @@
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblContraseña = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.txtContraseña = new System.Windows.Forms.TextBox();
+            this.txtContrasenia = new System.Windows.Forms.TextBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -42,7 +42,7 @@
             this.lblOne.AutoSize = true;
             this.lblOne.Font = new System.Drawing.Font("Tahoma", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOne.ForeColor = System.Drawing.Color.Green;
-            this.lblOne.Location = new System.Drawing.Point(355, 9);
+            this.lblOne.Location = new System.Drawing.Point(276, 9);
             this.lblOne.Name = "lblOne";
             this.lblOne.Size = new System.Drawing.Size(285, 72);
             this.lblOne.TabIndex = 0;
@@ -54,7 +54,7 @@
             this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.Location = new System.Drawing.Point(75, 151);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(135, 39);
+            this.lblUsuario.Size = new System.Drawing.Size(130, 38);
             this.lblUsuario.TabIndex = 1;
             this.lblUsuario.Text = "Usuario";
             // 
@@ -62,33 +62,33 @@
             // 
             this.lblContraseña.AutoSize = true;
             this.lblContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContraseña.Location = new System.Drawing.Point(75, 275);
+            this.lblContraseña.Location = new System.Drawing.Point(75, 246);
             this.lblContraseña.Name = "lblContraseña";
-            this.lblContraseña.Size = new System.Drawing.Size(193, 39);
+            this.lblContraseña.Size = new System.Drawing.Size(186, 38);
             this.lblContraseña.TabIndex = 2;
             this.lblContraseña.Text = "Contraseña";
             this.lblContraseña.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(303, 167);
+            this.txtUsuario.Location = new System.Drawing.Point(288, 151);
             this.txtUsuario.MaxLength = 20;
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(157, 22);
             this.txtUsuario.TabIndex = 3;
             // 
-            // txtContraseña
+            // txtContrasenia
             // 
-            this.txtContraseña.Location = new System.Drawing.Point(303, 290);
-            this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.PasswordChar = '#';
-            this.txtContraseña.Size = new System.Drawing.Size(157, 22);
-            this.txtContraseña.TabIndex = 4;
+            this.txtContrasenia.Location = new System.Drawing.Point(288, 261);
+            this.txtContrasenia.Name = "txtContrasenia";
+            this.txtContrasenia.PasswordChar = '#';
+            this.txtContrasenia.Size = new System.Drawing.Size(157, 22);
+            this.txtContrasenia.TabIndex = 4;
             // 
             // btnAceptar
             // 
             this.btnAceptar.Font = new System.Drawing.Font("Yu Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptar.Location = new System.Drawing.Point(763, 166);
+            this.btnAceptar.Location = new System.Drawing.Point(592, 151);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(188, 55);
             this.btnAceptar.TabIndex = 5;
@@ -99,7 +99,7 @@
             // btnCancelar
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Yu Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(763, 275);
+            this.btnCancelar.Location = new System.Drawing.Point(592, 246);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(188, 56);
             this.btnCancelar.TabIndex = 6;
@@ -110,10 +110,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1007, 598);
+            this.ClientSize = new System.Drawing.Size(876, 499);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
-            this.Controls.Add(this.txtContraseña);
+            this.Controls.Add(this.txtContrasenia);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.lblContraseña);
             this.Controls.Add(this.lblUsuario);
@@ -132,7 +132,7 @@
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.Label lblContraseña;
         private System.Windows.Forms.TextBox txtUsuario;
-        private System.Windows.Forms.TextBox txtContraseña;
+        private System.Windows.Forms.TextBox txtContrasenia;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnCancelar;
     }

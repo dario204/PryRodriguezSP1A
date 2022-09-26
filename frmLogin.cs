@@ -31,33 +31,28 @@ namespace PryRodriguezSP1A
         {
 
         }
-     
+        int intentos = 0;
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            if (txtUsuario.Text == "administrador" && txtContraseña.Text == "adm135$")
-            {
-                this.Hide();
-                frmBienvenido f = new frmBienvenido();
-                f.Text = txtUsuario.Text;
-                f.ShowDialog();
-                this.Show();
+            if ((txtUsuario.Text == "Administrador" &&
+                txtContrasenia.Text == "adm135$") ||
+                (txtUsuario.Text == "Operador" &&
+                txtContrasenia.Text == "ope246$"))
+ {
+                this.Hide(); // oculta este formualrio
+                frmBienvenido f = new frmBienvenido(); // crea el frmInicio
+                f.Text = txtUsuario.Text; // asigna el texto de título
+                f.ShowDialog(); // visualiza y ejecuta el frmInicio
+                this.Show(); // visualiza nuevamente este formulario
             }
             else
             {
-                MessageBox.Show("Datos incorrectos");
-    
-            }
-            if (txtUsuario.Text=="operador"&& txtContraseña.Text=="ope246$")
-            {
-                this.Hide();
-                frmBienvenido f = new frmBienvenido();
-                f.Text = txtUsuario.Text;
-                f.ShowDialog();
-                this.Show();
-            }
-            else
-            {
-                MessageBox.Show("Datos incorrectos");
+                MessageBox.Show("Datos incorrectos. Acceso Denegado.");
+                intentos++; // incrementa el contador de intentos fallidos
+                if (intentos == 3) // si es 3 se cierra el formulario
+                {
+                    this.Close();
+                }
             }
         }
     }
